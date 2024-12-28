@@ -16,8 +16,8 @@ import com.wallet.wallet.service.AuthService;
 public class AuthController {
   private AuthService authService;
   public AuthController(AuthService authService) {
-        this.authService = authService;
-    }
+    this.authService = authService;
+  }
   @PostMapping("/login")
   public ResponseEntity<RecoveryJwtTokenDto> authenticateUser(@RequestBody LoginUserDto loginUserDto) {
     RecoveryJwtTokenDto token = authService.authenticateUser(loginUserDto);
