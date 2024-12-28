@@ -33,7 +33,7 @@ public class SecurityConfiguration {
 
     public static final String [] ENDPOINTS_CUSTOMER = {"/api/client"};
 
-    public static final String [] ENDPOINTS_ADMIN = {"/api/admin", "/api/admin/add"};
+    public static final String [] ENDPOINTS_ADMIN = {"/api/admin", "/api/admin/transfer/add"};
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
